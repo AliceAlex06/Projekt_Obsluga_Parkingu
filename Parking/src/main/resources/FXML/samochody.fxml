@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Parking.Controller.SamochodyController">
+    <children>
+        <Pane prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <VBox alignment="TOP_RIGHT">
+                    <children>
+                        <Button fx:id="cofnijButton" mnemonicParsing="false" onAction="#cofnijButton" prefHeight="20.0"
+                                text="Cofnij">
+                            <VBox.margin>
+                                <Insets bottom="15.0" right="15.0" top="15.0"/>
+                            </VBox.margin>
+                        </Button>
+                        <TableView fx:id="samochodTableView" prefHeight="550.0" prefWidth="800.0">
+                            <columns>
+                                <TableColumn fx:id="idColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                                             text="Id samochodu"/>
+                                <TableColumn fx:id="markaColumn" maxWidth="175.0" minWidth="175.0" prefWidth="175.0"
+                                             text="Marka samochodu"/>
+                                <TableColumn fx:id="pojemnoscColumn" maxWidth="125.0" minWidth="125.0" prefWidth="125.0"
+                                             text="Pojemność silnika"/>
+                                <TableColumn fx:id="numerColumn" maxWidth="125.0" minWidth="125.0" prefWidth="125.0"
+                                             text="Numer rejestracyjny"/>
+                                <TableColumn fx:id="nazwiskoColumn" maxWidth="175.0" minWidth="175.0" prefWidth="175.0"
+                                             text="Nazwisko właściciela"/>
+                                <TableColumn fx:id="parkingColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                                             text="Parking"/>
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
